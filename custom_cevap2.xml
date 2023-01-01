@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:padding="7dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="293dp"
+        android:layout_height="220dp"
+        android:background="@color/grey2"
+        >
+
+        <ImageView
+            android:id="@+id/yanliscevap"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/yanliscevap"
+
+            />
+
+        <TextView
+            android:id="@+id/puanson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:text="Puan : "
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="btnYanlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_anamenu"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@null" />
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan_4"
+    tools:context=".KayitActivity">
+
+    <EditText
+        android:id="@+id/kayit_ol_editEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Mail Adresi"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kayit_ol_editSifre"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Sifre"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_editEmail"
+        app:layout_constraintVertical_bias="0.101"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/kayit_ol_editSifreKontrol"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Sifre Onayi"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_editSifre"
+        app:layout_constraintVertical_bias="0.126"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/kayitolButton"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:background="@drawable/kayitol_button"
+        android:onClick="kayitOl"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_editSifreKontrol"
+        app:layout_constraintVertical_bias="0.22"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/geridon_button"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:background="@drawable/geridon_button"
+        android:onClick="geriDon"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_ol_editSifreKontrol"
+        app:layout_constraintVertical_bias="0.418"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="74dp"
+        android:background="@drawable/cerceve"
+        app:layout_constraintBottom_toBottomOf="@+id/kayit_ol_editEmail"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_editEmail"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_editEmail"
+        app:layout_constraintTop_toTopOf="@+id/kayit_ol_editEmail"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="74dp"
+        android:background="@drawable/cerceve"
+        app:layout_constraintBottom_toBottomOf="@+id/kayit_ol_editSifre"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_editSifre"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_editSifre"
+        app:layout_constraintTop_toTopOf="@+id/kayit_ol_editSifre"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="74dp"
+        android:background="@drawable/cerceve"
+        app:layout_constraintBottom_toBottomOf="@+id/kayit_ol_editSifreKontrol"
+        app:layout_constraintEnd_toEndOf="@+id/kayit_ol_editSifreKontrol"
+        app:layout_constraintStart_toStartOf="@+id/kayit_ol_editSifreKontrol"
+        app:layout_constraintTop_toTopOf="@+id/kayit_ol_editSifreKontrol"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
